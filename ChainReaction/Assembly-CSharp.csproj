@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ChainHeadScript.cs" />
      <Compile Include="Assets\Scripts\Attackable.cs" />
      <Compile Include="Assets\Scripts\BackgroundColorChangeScript.cs" />
      <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
@@ -57,6 +58,7 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CameraFollowPlayer.cs" />
      <Compile Include="Assets\Scripts\CameraShakeScript.cs" />
+     <Compile Include="Assets\Scripts\ChainScript.cs" />
      <Compile Include="Assets\Scripts\ColorChangeScript.cs" />
      <Compile Include="Assets\Scripts\CompleteScreen.cs" />
      <Compile Include="Assets\Scripts\DamagePlayerOverTimeScript.cs" />
