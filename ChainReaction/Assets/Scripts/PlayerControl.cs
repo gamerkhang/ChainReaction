@@ -143,7 +143,7 @@ public class PlayerControl : MonoBehaviour
 
 
 		// Cache the horizontal input.
-		float h = Input.GetAxis("Horizontal");
+		float h = Input.GetAxis("Horizontal1");
 		ho = h;
 		// The Speed animator parameter is set to the absolute value of the horizontal input.
 		//anim.SetFloat("Speed", Mathf.Abs(h));
@@ -169,7 +169,7 @@ public class PlayerControl : MonoBehaviour
 				// ... flip the player.
 				Flip();
 
-			if(h == 0)
+			if(Mathf.Abs (h) <= 0.1f)
 			{
 				GetComponent<Rigidbody2D>().velocity = new Vector2(0, GetComponent<Rigidbody2D>().velocity.y);
 			}
@@ -297,6 +297,12 @@ public class PlayerControl : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+		foreach (Transform t in transform.GetComponentsInChildren<Transform>()) {
+			if(t.tag.Equals("Chain"))
+			{
+				t.localScale = theScale;
+			}
+		}
 	}
 
 	void OnGUI()
