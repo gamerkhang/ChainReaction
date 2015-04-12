@@ -22,9 +22,9 @@ public class MobScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Vector3.Distance(transform.position,targetPosition) < .1f){
+		if (Vector3.Distance(transform.position,targetPosition) < .3f){
 			targetPosition.x = Random.Range (minBoundaryX,maxBoundaryX);
-			targetPosition.y = Random.Range (minBoundaryX, maxBoundaryY);
+			targetPosition.y = Random.Range (minBoundaryY, maxBoundaryY);
 			targetPosition.z = 0;
 		}
 

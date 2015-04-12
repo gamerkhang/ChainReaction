@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MobScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\SlideController.cs" Line="41" Column="38" />
-      <File FileName="Assets\Scripts\MobScript.cs" Line="25" Column="65" />
+      <File FileName="Assets\Scripts\SlideController.cs" Line="40" Column="20" />
+      <File FileName="Assets\Scripts\MobScript.cs" Line="6" Column="20" />
+      <File FileName="Assets\Scripts\SpawnManager.cs" Line="9" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
