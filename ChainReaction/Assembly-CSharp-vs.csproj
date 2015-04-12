@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\MenuBackgroundMusic.cs" />
      <Compile Include="Assets\Scripts\MirrorFlip.cs" />
+     <Compile Include="Assets\Scripts\MobScript.cs" />
      <Compile Include="Assets\Scripts\Options.cs" />
      <Compile Include="Assets\Scripts\ParticleColorChangeScript.cs" />
      <Compile Include="Assets\Scripts\Pauser.cs" />
@@ -98,6 +99,7 @@
      <Compile Include="Assets\Scripts\SlamControlScript.cs" />
      <Compile Include="Assets\Scripts\SlideController.cs" />
      <Compile Include="Assets\Scripts\SongSelectScript.cs" />
+     <Compile Include="Assets\Scripts\SpawnManager.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\Spikes.cs" />
      <Compile Include="Assets\Scripts\SpriteColorChangeScript.cs" />
