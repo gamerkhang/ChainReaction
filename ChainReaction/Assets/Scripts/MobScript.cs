@@ -16,7 +16,7 @@ public class MobScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		targetPosition.x = Random.Range (minBoundaryX,maxBoundaryX);
-		targetPosition.y = Random.Range (minBoundaryX, maxBoundaryY);
+		targetPosition.y = Random.Range (minBoundaryY, maxBoundaryY);
 		targetPosition.z = 0;
 	}
 	
@@ -33,5 +33,9 @@ public class MobScript : MonoBehaviour {
 	void FixedUpdate(){
 		direction = (targetPosition - this.transform.position).normalized;
 		this.transform.GetComponent<Rigidbody2D> ().velocity = direction * speed;
+	}
+	public void mobDie()
+	{
+		Destroy (this.gameObject);
 	}
 }
