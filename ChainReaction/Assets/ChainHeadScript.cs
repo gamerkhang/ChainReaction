@@ -13,7 +13,7 @@ public class ChainHeadScript : MonoBehaviour {
 	void Update () {
 	
 	}
-	void OnCollisionEnter2D(Collision2D coll) {
+	void OnTriggerEnter2D(Collider2D coll) {
 		if (isHead == true && coll.gameObject.tag == "Enemy") {
 			chain.addChainLength ();
 			coll.transform.GetComponent<MobScript>().mobDie ();
