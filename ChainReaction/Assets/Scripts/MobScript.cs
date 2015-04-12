@@ -8,6 +8,7 @@ public class MobScript : MonoBehaviour {
 	public float maxBoundaryY;
 	public float minBoundaryX;
 	public float minBoundaryY;
+	public SpawnManager spawn;
 	//random position on the map 
 	public Vector3 targetPosition;
 	public Vector2 direction;
@@ -18,6 +19,7 @@ public class MobScript : MonoBehaviour {
 		targetPosition.x = Random.Range (minBoundaryX,maxBoundaryX);
 		targetPosition.y = Random.Range (minBoundaryY, maxBoundaryY);
 		targetPosition.z = 0;
+		spawn = FindObjectOfType<SpawnManager> ();
 	}
 	
 	// Update is called once per frame
@@ -36,6 +38,8 @@ public class MobScript : MonoBehaviour {
 	}
 	public void mobDie()
 	{
+		spawn.mobCounter--;
 		Destroy (this.gameObject);
+
 	}
 }
