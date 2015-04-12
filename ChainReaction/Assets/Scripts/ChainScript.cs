@@ -52,9 +52,9 @@ public class ChainScript : MonoBehaviour {
 		else if (playerNumber == 1) {
 			input = new Vector2 (Input.GetAxis ("Horizontal2"), Input.GetAxis ("Vertical2"));
 		}
-		if (Input.GetButtonDown ("Fire1")) {
-			addChainLength();
-		}
+		//if (Input.GetButtonDown ("Fire1")) {
+		//	addChainLength();
+		//}
 	}
 	void FixedUpdate(){
 		if (Mathf.Abs (input.x) >=.2f) {
@@ -67,7 +67,7 @@ public class ChainScript : MonoBehaviour {
 			chainLinks[currentChainLength -1].GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 		}
 	}
-	void addChainLength()
+	public void addChainLength()
 	{
 		if (currentChainLength < maxChainLength) {
 			chainLinks[currentChainLength] = (GameObject)Instantiate(chainLink,chainLinks[currentChainLength-1].transform.Find("ChainRight").position,Quaternion.identity);
