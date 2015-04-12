@@ -55,6 +55,7 @@ public class MobScript : MonoBehaviour {
 		if (anim != null) {
 			anim.SetTrigger("isDead");
 		}
+
 		Destroy (this.gameObject,2);
 
 	}
