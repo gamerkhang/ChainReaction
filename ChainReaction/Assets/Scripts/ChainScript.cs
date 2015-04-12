@@ -49,9 +49,12 @@ public class ChainScript : MonoBehaviour {
 		//first player
 		if (playerNumber == 0) {
 			input = new Vector2 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"));
-		}
-		else if (playerNumber == 1) {
+		} else if (playerNumber == 1) {
 			input = new Vector2 (Input.GetAxis ("Horizontal2"), Input.GetAxis ("Vertical2"));
+		} else if (playerNumber == 2) {
+			input = new Vector2 (Input.GetAxis ("Horizontal3"), Input.GetAxis ("Vertical3"));
+		} else if (playerNumber == 3) {
+			input = new Vector2 (Input.GetAxis ("Horizontal4"), Input.GetAxis ("Vertical4"));
 		}
 
 	}
