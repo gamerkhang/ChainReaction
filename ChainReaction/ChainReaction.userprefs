@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Terrain Generator\Assets\Scripts\TerrainSpawner.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SpawnManager.cs">
     <Files>
-      <File FileName="..\..\..\Terrain Generator\Assets\Scripts\TerrainSpawner.cs" Line="8" Column="33" />
+      <File FileName="Assets\Scripts\SpawnManager.cs" Line="26" Column="32" />
+      <File FileName="..\..\..\Terrain Generator\Assets\Scripts\TerrainSpawner.cs" Line="57" Column="97" />
+      <File FileName="Assets\Scripts\MobScript.cs" Line="6" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
