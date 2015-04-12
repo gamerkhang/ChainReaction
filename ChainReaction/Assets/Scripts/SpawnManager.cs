@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class SpawnManager : MonoBehaviour {
 	// counter for how many mobs are still live
 	public int mobCounter; 
-	public GameObject mob1;
+	public GameObject[] mobArray;
 	public List<GameObject> mobList= new List<GameObject>();
 	public float maxBoundaryX;
 	public float maxBoundaryY;
@@ -29,6 +29,6 @@ public class SpawnManager : MonoBehaviour {
 	void SpawnMob(){
 		Vector3 pos = new Vector3 (Random.Range (minBoundaryX, maxBoundaryX),
 		                          Random.Range (minBoundaryY, maxBoundaryY), 0);
-		Instantiate (mob1, pos, Quaternion.identity);
+		Instantiate (mobArray[Random.Range (0,2)], pos, Quaternion.identity);
 	}
 }

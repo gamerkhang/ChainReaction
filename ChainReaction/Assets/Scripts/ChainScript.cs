@@ -11,6 +11,7 @@ public class ChainScript : MonoBehaviour {
 	public Sprite link;
 	public Sprite head;
 	public int playerNumber = 0;
+	public int minChainLength = 5;
 	// Use this for initialization
 	void Start () {
 	//construct the chain
@@ -52,9 +53,7 @@ public class ChainScript : MonoBehaviour {
 		else if (playerNumber == 1) {
 			input = new Vector2 (Input.GetAxis ("Horizontal2"), Input.GetAxis ("Vertical2"));
 		}
-		//if (Input.GetButtonDown ("Fire1")) {
-		//	addChainLength();
-		//}
+
 	}
 	void FixedUpdate(){
 		if (Mathf.Abs (input.x) >=.2f) {
@@ -80,6 +79,17 @@ public class ChainScript : MonoBehaviour {
 			chainLinks[currentChainLength-1].GetComponent<SpriteRenderer>().sprite = link;
 			chainLinks[currentChainLength-1].GetComponent<ChainHeadScript>().isHead = false;
 			currentChainLength++;
+		}
+	}
+
+	public void subChainLength()
+	{
+		//min chain length
+		if (currentChainLength >= minChainLength) {
+			Destroy(chainLinks[currentChainLength-1]);
+			chainLinks[currentChainLength -2].GetComponent<SpriteRenderer>().sprite = head;
+			chainLinks[currentChainLength -2].GetComponent<ChainHeadScript>().isHead = true;
+			currentChainLength--;
 		}
 	}
 }
