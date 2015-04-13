@@ -19,7 +19,7 @@ public class SpawnManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		spawnTimer += Time.deltaTime;
-		if(mobCounter < 10&& spawnTimer > 3){
+		if(mobCounter < 10&& spawnTimer > 1.5){
 			SpawnMob ();
 			mobCounter++;
 			spawnTimer = 0;
@@ -29,6 +29,6 @@ public class SpawnManager : MonoBehaviour {
 	void SpawnMob(){
 		Vector3 pos = new Vector3 (Random.Range (minBoundaryX, maxBoundaryX),
 		                          Random.Range (minBoundaryY, maxBoundaryY), 0);
-		Instantiate (mobArray[Random.Range (0,2)], pos, Quaternion.identity);
+		Instantiate (mobArray[Random.Range (0,3)], pos, Quaternion.identity);
 	}
 }

@@ -2,6 +2,8 @@
 using System.Collections;
 public class ChainScript : MonoBehaviour {
     public GameObject[] chainLinks;
+	public GameObject[] playerStocks;
+	public int numStocks = 3;
     public int maxChainLength;
     public int startChainLength;
 	public int currentChainLength;
@@ -12,6 +14,7 @@ public class ChainScript : MonoBehaviour {
 	public Sprite head;
 	public int playerNumber = 0;
 	public int minChainLength = 5;
+	public bool hasLost = false;
 	// Use this for initialization
 	void Start () {
 	//construct the chain
@@ -28,9 +31,11 @@ public class ChainScript : MonoBehaviour {
 				chainLinks[i].GetComponent<HingeJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
 				chainLinks[i].GetComponent<HingeJoint2D>().anchor = -chainLinks[i].transform.Find ("ChainLeft").localPosition;
 				chainLinks[i].GetComponent<HingeJoint2D>().connectedAnchor = chainLinks[i].transform.Find("ChainLeft").localPosition;
-
 				chainLinks[i].GetComponent<Rigidbody2D>().isKinematic = false;
 				chainLinks[i].transform.parent = this.transform;
+				chainLinks[i].transform.GetComponent<ChainHeadScript>().chain = transform.GetComponent<ChainScript>();
+				chainLinks[i].transform.GetComponent<ChainHeadScript>().source = transform.GetComponent<AudioSource>();
+
 				continue;
             }
 
@@ -39,6 +44,9 @@ public class ChainScript : MonoBehaviour {
 			chainLinks[i].GetComponent<HingeJoint2D>().anchor = -chainLinks[i].transform.Find ("ChainLeft").localPosition;
 			chainLinks[i].GetComponent<HingeJoint2D>().connectedAnchor = chainLinks[i].transform.Find("ChainLeft").localPosition;
 			chainLinks[i].transform.parent = this.transform;
+			chainLinks[i].transform.GetComponent<ChainHeadScript>().chain = transform.GetComponent<ChainScript>();
+			chainLinks[i].transform.GetComponent<ChainHeadScript>().source = transform.GetComponent<AudioSource>();
+
         }
 		chainLinks [currentChainLength - 1].GetComponent<SpriteRenderer> ().sprite = head;
 		chainLinks[currentChainLength - 1].GetComponent<ChainHeadScript>().isHead = true;
@@ -46,6 +54,8 @@ public class ChainScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (numStocks == 0)
+			hasLost = true;
 		//first player
 		if (playerNumber == 0) {
 			input = new Vector2 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"));
@@ -77,6 +87,8 @@ public class ChainScript : MonoBehaviour {
 			chainLinks[currentChainLength].GetComponent<HingeJoint2D>().anchor = -chainLinks[currentChainLength].transform.Find ("ChainLeft").localPosition;
 			chainLinks[currentChainLength].GetComponent<HingeJoint2D>().connectedAnchor = chainLinks[currentChainLength].transform.Find("ChainLeft").localPosition;
 			chainLinks[currentChainLength].transform.parent = this.transform;
+			chainLinks[currentChainLength].transform.GetComponent<ChainHeadScript>().chain = transform.GetComponent<ChainScript>();
+			chainLinks[currentChainLength].transform.GetComponent<ChainHeadScript>().source = transform.GetComponent<AudioSource>();
 			chainLinks[currentChainLength].GetComponent<SpriteRenderer>().sprite = head;
 			chainLinks[currentChainLength].GetComponent<ChainHeadScript>().isHead = true;
 			chainLinks[currentChainLength-1].GetComponent<SpriteRenderer>().sprite = link;
@@ -93,6 +105,15 @@ public class ChainScript : MonoBehaviour {
 			chainLinks[currentChainLength -2].GetComponent<SpriteRenderer>().sprite = head;
 			chainLinks[currentChainLength -2].GetComponent<ChainHeadScript>().isHead = true;
 			currentChainLength--;
+		}
+	}
+	public void removeStock()
+	{
+		if (numStocks > 0) {
+			Destroy (playerStocks [numStocks - 1]);
+			numStocks--;
+		} else {
+			hasLost = true;
 		}
 	}
 }

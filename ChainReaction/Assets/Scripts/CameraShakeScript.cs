@@ -16,7 +16,7 @@ public class CameraShakeScript : MonoBehaviour {
 	
 	void Awake()
 	{
-
+		originalPos = transform.position;
 	}
 
 	
@@ -37,6 +37,7 @@ public class CameraShakeScript : MonoBehaviour {
 		else if(shake <= 0 )
 		{
 			shake = 0f;
+			Camera.main.transform.localPosition = originalPos;
 		}
 		
 	}

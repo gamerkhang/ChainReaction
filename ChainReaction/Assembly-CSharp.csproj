@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ChainHeadScript.cs" />
+     <Compile Include="Assets\LoadLevelScript.cs" />
+     <Compile Include="Assets\P1WinScript.cs" />
+     <Compile Include="Assets\QuitAppScript.cs" />
      <Compile Include="Assets\Scripts\Attackable.cs" />
      <Compile Include="Assets\Scripts\BackgroundColorChangeScript.cs" />
      <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
@@ -119,6 +122,8 @@
      <Compile Include="Assets\Scripts\randomPlatform.cs" />
      <Compile Include="Assets\Scripts\sidedoor.cs" />
      <Compile Include="Assets\Scripts\signpost.cs" />
+     <Compile Include="Assets\anykeytoContinue.cs" />
+     <Compile Include="Assets\fourPManagerScript.cs" />
      <Compile Include="Assets\managerScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
