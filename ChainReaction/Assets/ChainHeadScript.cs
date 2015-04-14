@@ -38,10 +38,6 @@ public class ChainHeadScript : MonoBehaviour {
 				if (source != null)
 					source.PlayOneShot (hitSound);
 
-				Camera.main.GetComponent<CameraShakeScript>().shake = .2f;
-				for (int i = 0; i < 2; i++) {
-					chain.subChainLength ();
-				}
 				coll.transform.GetComponent<MobScript> ().mobDie ();
 
 				//player hit detection and point attribution
