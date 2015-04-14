@@ -1,0 +1,50 @@
+Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 660   (ID=0x11c0)
+    Vendor:   NVIDIA
+    VRAM:     1989 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Desktop\Chain Reaction\ChainReaction\ChainReaction\Builds\ChainBuild1.1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Desktop\Chain Reaction\ChainReaction\ChainReaction\Builds\ChainBuild1.1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Desktop\Chain Reaction\ChainReaction\ChainReaction\Builds\ChainBuild1.1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Desktop\Chain Reaction\ChainReaction\ChainReaction\Builds\ChainBuild1.1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Desktop\Chain Reaction\ChainReaction\ChainReaction\Builds\ChainBuild1.1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Desktop\Chain Reaction\ChainReaction\ChainReaction\Builds\ChainBuild1.1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.039 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: E:\Desktop\Chain Reaction\ChainReaction\ChainReaction\Builds\ChainBuild1.1_Data\Managed\System.Core.dll (this message is harmless)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.305393 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 211.
+Total: 0.100794 ms (FindLiveObjects: 0.016548 ms CreateObjectMapping: 0.009628 ms MarkObjects: 0.067096 ms  DeleteObjects: 0.007221 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.538575 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 487.
+Total: 0.180828 ms (FindLiveObjects: 0.021964 ms CreateObjectMapping: 0.023468 ms MarkObjects: 0.126369 ms  DeleteObjects: 0.008123 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.602662 ms
+
+Unloading 166 unused Assets to reduce memory usage. Loaded Objects now: 208.
+Total: 0.253641 ms (FindLiveObjects: 0.018353 ms CreateObjectMapping: 0.014141 ms MarkObjects: 0.094777 ms  DeleteObjects: 0.125767 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.248226 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 211.
+Total: 0.068901 ms (FindLiveObjects: 0.008424 ms CreateObjectMapping: 0.007522 ms MarkObjects: 0.043928 ms  DeleteObjects: 0.008123 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.275305 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 215.
+Total: 0.105909 ms (FindLiveObjects: 0.018654 ms CreateObjectMapping: 0.009929 ms MarkObjects: 0.066494 ms  DeleteObjects: 0.009929 ms)
+
