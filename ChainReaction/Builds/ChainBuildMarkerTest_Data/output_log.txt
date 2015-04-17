@@ -1,0 +1,60 @@
+Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics 3000 (ID=0x116)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Khang Tran\Desktop\UCI Stuff\2015 3Spring\Game Jam Spring 2015\ChainReaction\ChainReaction\Builds\ChainBuildMarkerTest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Khang Tran\Desktop\UCI Stuff\2015 3Spring\Game Jam Spring 2015\ChainReaction\ChainReaction\Builds\ChainBuildMarkerTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Khang Tran\Desktop\UCI Stuff\2015 3Spring\Game Jam Spring 2015\ChainReaction\ChainReaction\Builds\ChainBuildMarkerTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Khang Tran\Desktop\UCI Stuff\2015 3Spring\Game Jam Spring 2015\ChainReaction\ChainReaction\Builds\ChainBuildMarkerTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Khang Tran\Desktop\UCI Stuff\2015 3Spring\Game Jam Spring 2015\ChainReaction\ChainReaction\Builds\ChainBuildMarkerTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Khang Tran\Desktop\UCI Stuff\2015 3Spring\Game Jam Spring 2015\ChainReaction\ChainReaction\Builds\ChainBuildMarkerTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.117 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Khang Tran\Desktop\UCI Stuff\2015 3Spring\Game Jam Spring 2015\ChainReaction\ChainReaction\Builds\ChainBuildMarkerTest_Data\Managed\System.Core.dll (this message is harmless)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.584551 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 211.
+Total: 0.265056 ms (FindLiveObjects: 0.053546 ms CreateObjectMapping: 0.024542 ms MarkObjects: 0.167779 ms  DeleteObjects: 0.016510 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.338236 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.218648 ms (FindLiveObjects: 0.045514 ms CreateObjectMapping: 0.054885 ms MarkObjects: 0.105308 ms  DeleteObjects: 0.011601 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.724218 ms
+
+Unloading 135 unused Assets to reduce memory usage. Loaded Objects now: 208.
+Total: 0.334666 ms (FindLiveObjects: 0.045960 ms CreateObjectMapping: 0.047745 ms MarkObjects: 0.081658 ms  DeleteObjects: 0.157962 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.308785 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 208.
+Total: 0.153946 ms (FindLiveObjects: 0.030343 ms CreateObjectMapping: 0.034805 ms MarkObjects: 0.083443 ms  DeleteObjects: 0.004462 ms)
+
+Joystick disconnected ("Controller (XBOX 360 For Windows)").
+ 
+(Filename:  Line: 714)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.324849 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 211.
+Total: 0.158408 ms (FindLiveObjects: 0.029004 ms CreateObjectMapping: 0.036144 ms MarkObjects: 0.081658 ms  DeleteObjects: 0.010709 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.331097 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 215.
+Total: 0.105308 ms (FindLiveObjects: 0.015617 ms CreateObjectMapping: 0.013386 ms MarkObjects: 0.066040 ms  DeleteObjects: 0.009370 ms)
+
